@@ -23,7 +23,7 @@ public class Attraction : MonoBehaviour
         Vector3 force = direction.normalized * forceMagnitude;
 
         rbOther.AddForce(force);
-    }
+    }//Attract
 
     private void OnEnable()
     {
@@ -34,7 +34,7 @@ public class Attraction : MonoBehaviour
 
         planetAttractions.Add(this);
 
-    }
+    }//OnEnable
 
     void FixedUpdate()
     {
@@ -45,5 +45,6 @@ public class Attraction : MonoBehaviour
                 Attract(pAttraction);
             }
         }
-    }
-}
+    }//FixedUpdate
+
+}//Attraction
